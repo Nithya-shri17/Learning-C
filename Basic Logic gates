@@ -1,0 +1,22 @@
+ #include<stdio.h>
+  int main(){
+       int a,b;
+       printf("Enter either 0 or 1\n");
+       scanf("%d %d",&a,&b);
+       int and=AND(a,b);
+       printf("AND Result = %d\n",and);
+       int or=OR(a,b);
+       printf("OR Result = %d\n",or);
+       int not=NOT(a);
+       printf("NOT Result = %d\n",not);
+
+ }
+ int AND(int a,int b){
+      return(a&b);
+ }
+ int OR(int a,int b){
+    return(a|b);
+ }
+ int NOT(int a){
+    return(1-a);
+ }
